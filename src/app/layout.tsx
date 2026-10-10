@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { VT323 } from "next/font/google";
 import "./globals.css";
 
-const vt323 = VT323({
+const font_vt323 = VT323({
   weight: "400",
   variable: "--font-vt323",
   subsets: ["vietnamese"],
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={` ${vt323.variable} h-full antialiased`}>
+    <html lang="en" className={` ${font_vt323.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

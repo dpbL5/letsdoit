@@ -1,9 +1,15 @@
-export default function Page() {
+import Board from "./_components/Board";
+
+export default function Home() {
+  const cards = [
+    { id: 1, content: "Học Next" },
+    { id: 2, content: "Học SYSTEM DESIGN" },
+    { id: 3, content: "Học làm test" },
+  ];
   return (
-    <div className="self-center">
-      <h1 className="text-3xl">Home page</h1>
-      <h2>Smaller home page</h2>
-      <p className="text-2xl">Dương Phan Bảo Linh</p>
+    <div className="flex flex-col">
+      To do app
+      <Board Cards={cards} />
     </div>
   );
 }
